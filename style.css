@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS";
+    font-weight: 500;
+    font-style: italic;
+}
+
+html, body {
+    height: 100%; /* Ensure full height for body */
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: black;
+    padding: 1rem; /* Added padding to avoid edge collision */
+}
+
+.websiteheading {
+    height: 10vh; /* Reduced height to fit more content */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Adjusted font size */
+    color: #fff;
+    background-color: #5db9ee;
+}
+
+.leftcontainer {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0; /* Adjusted padding */
+}
+
+.leftcontainer img {
+    max-width: 100vw; /* Adjusted to fit within viewport width */
+    max-height: 45vh; /* Adjusted height to fit within viewport height */
+    border: 4px solid #5db9ee;
+    border-radius: 15px; 
+    object-fit: contain;
+    position: relative;
+    top: 10px;
+}
+
+.rightcontainer {
+    display: flex;
+    flex-direction: column; /* Changed to column to fit all content */
+    align-items: center;
+    width: 100%;
+    padding: 1rem; /* Reduced padding */
+    text-align: center;
+    flex: 1; /* Allow this to grow and shrink as needed */
+}
+
+.content {
+    max-width: 90%; /* Increased width to fit more content */
+    margin: 0 auto;
+    border: 3px solid #5db9ee;
+    border-radius: 15px; 
+}
+
+.content .intro {
+    font-size: 2.7rem; /* Adjusted font size */
+    color: #fff;
+    background-color: #222;
+}
+
+.content .intro span {
+    font-size: 2.7rem; /* Adjusted font size */
+    color: #5db9ee;
+}
+
+.content .hello {
+    font-size: 1.7rem; /* Adjusted font size */
+    color: #f2d54e;
+    background:  #35343463;
+}
+
+.content .outro {
+    font-size: 2rem; /* Adjusted font size */
+    color: #fff;
+    background: #222;
+}
+
+.content .outro span {
+    font-size: 1.7rem; /* Adjusted font size */
+    color: #5db9ee;
+}
+
+.content .para {
+    font-size: 1.7rem; /* Adjusted font size */
+    color: #f2d54e;
+    max-width: 100%; /* Ensure it fits within the container */
+    margin: 0 auto;
+    background: #1f1d1da1;
+}
+
+.content .para span{
+    color: #c71ca4;
+}
+
+.content .final {
+    font-size: 1.3rem; /* Adjusted font size */
+    color: #c0c0c0;
+    background: #35343463;
+}
+
+.content .final span{
+    color: #c71ca4;
+}
+
+.content .hello span {
+    font-size: 37px;
+    animation-name: wave-animation;  
+    animation-duration: 5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
+  
